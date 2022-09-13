@@ -25,10 +25,21 @@ scroll(
 
 scroll(animate(".progress-bar", { scaleX: [0, 1] }));
 
-
-document.querySelectorAll(".parallaxcontainer").forEach(( parallaxcontainer ) => {
+document.querySelectorAll(".parallaxcontainer").forEach((parallaxcontainer) => {
   const elementderskalparallaxes = parallaxcontainer.querySelector("p");
   scroll(animate(elementderskalparallaxes, { y: [50, 500] }), {
-    target: elementderskalparallaxes
+    target: elementderskalparallaxes,
   });
 });
+
+// slut scrub video
+scroll(
+  ({ y }) => {
+    if (!lillevideo_2.readyState) return;
+    lillevideo_2.currentTime = lillevideo_2.duration * y.progress;
+  },
+  {
+    target: document.querySelector(".videoarticle_2"),
+    offset: ["-100vh", "end end"],
+  }
+);
