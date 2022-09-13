@@ -3,74 +3,82 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    font-family: aktiv-grotesk, sans-serif;
+  }
+}
+/* 
+@layer base {
     body{
         /* Aktiv Grotesk Regular */
-    font-family: aktiv-grotesk, sans-serif;
+    /* font-family: aktiv-grotesk, sans-serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: normal; */
         
         /* Aktiv Grotesk Italic */
-    font-family: aktiv-grotesk, sans-serif;
+    /* font-family: aktiv-grotesk, sans-serif;
     font-weight: 400;
-    font-style: italic;
+    font-style: italic; */
     
         /* Aktiv Grotesk Bold */
-    font-family: aktiv-grotesk, sans-serif;
+    /* font-family: aktiv-grotesk, sans-serif;
+    font-weight: 700;
+    font-style: normal; */
     
-        /* Aktiv Grotesk Bold Italic */
+        /* Aktiv Grotesk Bold Italic
     font-family: aktiv-grotesk, sans-serif;
     font-weight: 700;
      font-style: italic;
         
         /* Aktiv Grotesk Thin */
+    /* font-family: aktiv-grotesk-thin, sans-serif;
+    font-weight: 200;
+    font-style: normal; */
+        
+        /* Aktiv Grotesk Thin Italic
     font-family: aktiv-grotesk-thin, sans-serif;
     font-weight: 200;
-    font-style: normal;
+    font-style: italic; */
         
-        /* Aktiv Grotesk Thin Italic */
-    font-family: aktiv-grotesk-thin, sans-serif;
-    font-weight: 200;
-    font-style: italic;
-        
-        /* Aktiv Grotesk Cd Regular */
+        /* Aktiv Grotesk Cd Regular
     font-family: aktiv-grotesk-condensed, sans-serif;
     font-weight: 400;
     font-style: normal;
-        
-        /* Aktiv Grotesk Cd Italic */
+         */
+        /* Aktiv Grotesk Cd Italic
     font-family: aktiv-grotesk-condensed, sans-serif;
     font-weight: 400;
-    font-style: italic;
+    font-style: italic; */
         
           /* Aktiv Grotesk Cd Bold */
-    font-family: aktiv-grotesk-condensed, sans-serif;
+    /* font-family: aktiv-grotesk-condensed, sans-serif;
     font-weight: 700;
-    font-style: normal;
+    font-style: normal; */
         
          /* Aktiv Grotesk Cd Bold Italic */
-    font-family: aktiv-grotesk-condensed, sans-serif;
+    /* font-family: aktiv-grotesk-condensed, sans-serif;
     font-weight: 700;
     font-style: italic;
-        
+         */
         /* Aktiv Grotesk Ex Regular */
-    font-family: aktiv-grotesk-extended, sans-serif;
+    /* font-family: aktiv-grotesk-extended, sans-serif;
     font-weight: 400;
     font-style: normal;
-        
+         */
         /* Aktiv Grotesk Ex Italic */
-    font-family: aktiv-grotesk-extended, sans-serif;
+    /* font-family: aktiv-grotesk-extended, sans-serif;
     font-weight: 400;
-    font-style: italic;
+    font-style: italic; */
         
         /* Aktiv Grotesk Ex Bold */
-    font-family: aktiv-grotesk-extended, sans-serif;
+    /* font-family: aktiv-grotesk-extended, sans-serif;
     font-weight: 700;
-    font-style: normal;
+    font-style: normal; */
         
         /* Aktiv Grotesk Ex Bold Italic */
-    font-family: aktiv-grotesk-extended, sans-serif;
+    /* font-family: aktiv-grotesk-extended, sans-serif;
     font-weight: 700;
-    font-style: italic;
-    
+    font-style: italic; */ 
+/*     
     }
-}
+} */ 
