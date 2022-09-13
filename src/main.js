@@ -15,4 +15,12 @@ scroll(
   }
 );
 
+const items = document.querySelectorAll("#horisontalliste li");
+scroll(
+  animate("#horisontalliste", {
+    transform: ["none", `translateX(-${items.length - 1}00vw)`],
+  }),
+  { target: document.querySelector("#horisontalscrollsection") }
+);
+
 scroll(animate(".progress-bar", { scaleX: [0, 1] }));
