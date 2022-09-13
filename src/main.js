@@ -33,6 +33,8 @@ document.querySelectorAll(".parallaxcontainer").forEach((parallaxcontainer) => {
 });
 
 // slut scrub video
+const lillevideo_2 = document.querySelector("#videofil_2");
+lillevideo_2.pause();
 scroll(
   ({ y }) => {
     if (!lillevideo_2.readyState) return;
