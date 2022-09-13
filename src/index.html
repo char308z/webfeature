@@ -6,13 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
   </head>
-  <body class="grid place-items-center p-8">
-    <h1 class="text-xl font-bold text-emerald-700">Tailwind Template E2022</h1>
-    <p class="text-emerald-500">
-      Powered by <a href="https://vitejs.dev/guide">Vite</a>
-    </p>
-    <img src="img/vite.svg" alt="Vite Logo" />
-
+  <body class="grid place-items-center">
+    <section class="sticky">
+      <div class="videocontainer sticky top-0 h-screen w-screen object-cover">
+        <video
+          src="video_1.mp4"
+          muted
+          loop
+          playsinline
+          class="w-full"
+          id="videofil"
+        ></video>
+      </div>
+      <div class="videoarticle h-[20000px]"></div>
+    </section>
+    <main></main>
+    <div
+      class="progress-bar bg-pink fixed left-0 top-0 right-0 h-2 w-full origin-top-left"
+    ></div>
     <script type="module" src="./main.js"></script>
   </body>
 </html>
