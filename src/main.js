@@ -25,6 +25,7 @@ scroll(
 
 scroll(animate(".progress-bar", { scaleX: [0, 1] }));
 
+// parallax 3 section
 document.querySelectorAll(".parallaxcontainer").forEach((parallaxcontainer) => {
   const elementderskalparallaxes = parallaxcontainer.querySelector("p");
   scroll(animate(elementderskalparallaxes, { y: [50, 500] }), {
