@@ -14,6 +14,15 @@ scroll(
     offset: ["-100vh", "end end"],
   }
 );
+inView(".staggeranimation", ({ target }) => {
+  animate(
+    ".staggeranimation div",
+    { opacity: [0, 1] },
+    {
+      delay: stagger(1, { start: 1 }),
+    }
+  );
+});
 
 const items = document.querySelectorAll("#horisontalliste li");
 scroll(
@@ -47,35 +56,31 @@ scroll(
   }
 );
 
-
 // window scroll scale in animation (question marks)
-let elements = document.querySelectorAll("img.qm")
+let elements = document.querySelectorAll("img.qm");
 let scroll_position = 0;
 let section_position = 20200;
 let noElementsLeft = false;
 let counter = 0;
 function startAnimation() {
-   // Set the class with the animation to the element
-  
-    
-      elements[counter].classList.add("scale-in-center");
-      if(noElementsLeft === false) {
-        setTimeout(startAnimation, 1200);
-      }
-      if(counter < elements.length - 1) {
-        counter++
-      }
-      else {
-        noElementsLeft = true;
-      }
-   
+  // Set the class with the animation to the element
+
+  elements[counter].classList.add("scale-in-center");
+  if (noElementsLeft === false) {
+    setTimeout(startAnimation, 1200);
+  }
+  if (counter < elements.length - 1) {
+    counter++;
+  } else {
+    noElementsLeft = true;
+  }
 }
 
-window.addEventListener('scroll', function(e) {
+window.addEventListener("scroll", function (e) {
   scroll_position = window.scrollY;
-  console.log(scroll_position )
+  console.log(scroll_position);
   if (scroll_position > section_position) {
     // Start the animation -> startAnimation()
-    setTimeout(startAnimation(), 1200)
+    setTimeout(startAnimation(), 1200);
   }
 });
