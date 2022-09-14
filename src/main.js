@@ -14,12 +14,12 @@ scroll(
     offset: ["-100vh", "end end"],
   }
 );
-inView(".staggeranimation", () => {
+inView(".staggeranimation", ({ target }) => {
   animate(
     ".staggeranimation div",
     { opacity: [0, 1] },
     {
-      delay: stagger(1, { start: 2 }),
+      delay: stagger(1, { start: 1 }),
     }
   );
 });
