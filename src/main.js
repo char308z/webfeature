@@ -24,19 +24,7 @@ inView(".staggeranimation", ({ target }) => {
   );
 });
 
-const lillevideo3 = document.querySelector("#videofil3");
-lillevideo3.pause();
 
-scroll(
-  ({ y }) => {
-    if (!lillevideo3.readyState) return;
-    lillevideo3.currentTime = lillevideo3.duration * y.progress;
-  },
-  {
-    target: document.querySelector(".videoarticle3"),
-    offset: ["-100vh", "end end"],
-  }
-);
 
 inView(".staggeranimation", ({ target }) => {
   animate(
