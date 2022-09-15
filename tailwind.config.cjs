@@ -3,14 +3,14 @@ module.exports = {
   content: ["./src/**/*.{html,vue,js,ts,jsx,tsx}"],
   theme: {
     extend: {
-     
-      fontFamily:{
-        display: 'aktiv-grotesk-extended'
+      fontFamily: {
+        display: "aktiv-grotesk-extended",
+        h2: "aktiv-grotesk",
       },
-      colors:{
-        pink:'#F20FB6',
-        green:'#76D930'
-      }
+      colors: {
+        pink: "#F20FB6",
+        green: "#76D930",
+      },
     },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
