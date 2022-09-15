@@ -72,16 +72,14 @@ body {
   background-color: #333;
 }
 
-
 #container {
   width: 70vw;
   margin: 5vw auto;
 }
 
 h1 {
-  text-align: center;
   color: #fff;
-  font-size: 5em;
+
   letter-spacing: 8px;
   font-weight: 400;
   /*Create overlap*/
@@ -304,4 +302,3 @@ h1:nth-child(3) {
     opacity: 1;
   }
 }
-

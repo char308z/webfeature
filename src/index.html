@@ -25,7 +25,7 @@
 
     <main>
       <section
-        class="relative justify-items-center font-display sm:hidden md:m-60 md:mt-80 md:grid md:grid-cols-2"
+        class="relative hidden justify-items-center font-display md:m-60 md:mt-80 md:block md:grid md:grid-cols-2"
       >
         <div>
           <div id="container">
@@ -76,19 +76,33 @@
           />
         </div>
       </section>
+      <section
+        class="relative flex flex-col justify-items-center gap-8 p-10 font-display md:hidden"
+      >
+        <div class="flex items-center justify-around">
+          <h2 class="text-5xl">
+            Pierre <br />
+            Falcke.
+          </h2>
+          <img class="w-1/4" src="questionmark.svg" alt="questionmark" />
+        </div>
 
+        <h2 class="text-l pl-2 font-display">
+          Du ved formentligt ikke hvem han er.
+        </h2>
+      </section>
       <section>
         <img class="sticky top-0 h-screen w-screen" src="bg.webp" alt="bg" />
         <div class="mx-10 md:mx-80">
-          <p class="relative h-screen text-center font-display text-2xl">
+          <p class="relative h-screen font-display text-2xl md:text-center">
             Men indtil for kort tid siden, så du hans værker et par gange om
             dagen, hver dag, året rundt.
           </p>
-          <p class="relative h-screen text-center font-display text-2xl">
+          <p class="relative h-screen font-display text-2xl md:text-center">
             Pierre Falcke var en af verdens bedst sælgende stock-fotografer, og
             han solgte over 2 millioner fotos om året.
           </p>
-          <p class="relative h-screen text-center font-display text-2xl">
+          <p class="relative h-screen font-display text-2xl md:text-center">
             Men Pierre kunne ikke drømme om at bruge sine egne fotos - faktisk
             kan han ikke fordrage sit eget arbejde.
           </p>
@@ -207,14 +221,14 @@
       </section>
 
       <section class="section6 parallax">
-        <div class="w-100 sticky grid h-[300vh] grid-cols-2">
+        <div class="w-100 sticky md:grid md:h-[300vh] md:grid-cols-2">
           <h2
-            class="whitespace-normal pl-16 pt-28 text-left font-display text-7xl font-extrabold"
+            class="whitespace-normal pl-[2.5rem;] pt-28 pb-8 text-left font-display text-2xl font-extrabold md:pl-16 md:text-7xl"
           >
             Pierres berømmelse
           </h2>
           <div
-            class="sticky top-32 col-start-1 m-8 mx-auto h-fit w-1/2 bg-slate-50 p-10 text-xl text-black opacity-75"
+            class="sticky top-32 mx-auto h-fit bg-slate-50 p-10 text-xl text-black opacity-75 md:col-start-1 md:m-8 md:w-1/2"
           >
             <h4 class="font-display font-bold uppercase">
               Brugte alle sine lommepenge
@@ -272,12 +286,12 @@
       <section class="section7">
         <div>
           <img
-            class="sticky top-0 h-auto w-screen"
+            class="sticky top-80 h-auto w-screen md:top-0"
             src="tyktaage2.webp"
             alt="skillevej"
           />
           <h2
-            class="relative h-96 text-center font-display text-8xl font-extrabold"
+            class="relative h-96 text-center font-display text-2xl font-extrabold md:text-8xl"
           >
             En skillevej
           </h2>
@@ -316,7 +330,9 @@
       </section>
 
       <section class="section8">
-        <div class="videocontainer sticky top-0 h-screen w-screen object-cover">
+        <div
+          class="videocontainer sticky top-0 h-screen object-cover md:w-screen"
+        >
           <video
             src="video/video_grass.webm"
             muted
@@ -331,7 +347,7 @@
 
         <div class="mx-10 h-96 pb-20 md:mx-80">
           <h2
-            class="relative bg-[url('bg.webp')] bg-contain object-cover text-center font-display text-7xl font-extrabold"
+            class="relative bg-[url('bg.webp')] bg-contain object-cover text-center font-display text-2xl font-extrabold md:text-7xl"
           >
             En ny begyndelse
           </h2>
@@ -374,24 +390,31 @@
       </section>
     </main>
     <section class="sticky">
-      <div class="videocontainer_2 sticky top-0 left-0 right-0 h-screen w-full">
+      <div
+        class="videocontainer_2 sticky top-0 left-0 right-0 h-screen object-cover md:w-full"
+      >
         <video
           src="slut_kort.mp4"
           muted
           loop
           playsinline
-          class="w-full"
+          class="md:w-full"
           id="videofil_2"
           type="video/mp4"
         ></video>
       </div>
       <div
-        class="sticky top-40 ml-40 font-display text-2xl font-bold uppercase leading-loose"
+        class="text-l sticky top-40 ml-40 font-display font-bold uppercase leading-loose md:text-2xl"
       >
-        <p><strong class="text-3xl">" </strong>Nu kan jeg leve livet igen.</p>
+        <p>
+          <strong class="text-2xl md:text-3xl">" </strong>Nu kan jeg leve livet
+          igen.
+        </p>
         <p>Jeg føler mig frisk.</p>
         <p>Jeg føler mig fri.</p>
-        <p>Jeg føler mig genfødt.<strong class="text-3xl"> "</strong></p>
+        <p>
+          Jeg føler mig genfødt.<strong class="text-2xl md:text-3xl"> "</strong>
+        </p>
       </div>
       <div class="videoarticle_2 h-[20000px]"></div>
     </section>
