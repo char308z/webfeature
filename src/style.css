@@ -78,8 +78,9 @@ body {
 }
 
 h1 {
+  text-align: center;
   color: #fff;
-
+  font-size: 5em;
   letter-spacing: 8px;
   font-weight: 400;
   /*Create overlap*/
