@@ -25,7 +25,7 @@
 
     <main>
       <section
-        class="section2 relative md:m-60 md:mt-80 md:grid md:grid-cols-2 justify-items-center font-display"
+        class="section2 relative justify-items-center font-display md:m-60 md:mt-80 md:grid md:grid-cols-2"
       >
         <div>
           <div id="container">
@@ -33,7 +33,7 @@
             <h1>Pierre Falcke.</h1>
             <h1>Pierre Falcke.</h1>
           </div>
-          <h2 class="font-aktiv-grotesk-700 pl-52 text-3xl font-display">
+          <h2 class="font-aktiv-grotesk-700 pl-52 font-display text-3xl">
             Du ved formentligt ikke hvem han er.
           </h2>
         </div>
@@ -80,15 +80,15 @@
       <section>
         <img class="sticky top-0 h-screen w-screen" src="bg.webp" alt="bg" />
         <div class="mx-10 md:mx-80">
-          <p class="relative h-screen text-center text-2xl font-display">
+          <p class="relative h-screen text-center font-display text-2xl">
             Men indtil for kort tid siden, så du hans værker et par gange om
             dagen, hver dag, året rundt.
           </p>
-          <p class="relative h-screen text-center text-2xl font-display">
+          <p class="relative h-screen text-center font-display text-2xl">
             Pierre Falcke var en af verdens bedst sælgende stock-fotografer, og
             han solgte over 2 millioner fotos om året.
           </p>
-          <p class="relative h-screen text-center text-2xl font-display">
+          <p class="relative h-screen text-center font-display text-2xl">
             Men Pierre kunne ikke drømme om at bruge sine egne fotos - faktisk
             kan han ikke fordrage sit eget arbejde.
           </p>
@@ -96,54 +96,85 @@
       </section>
 
       <div class="overflow-clip px-0">
-        <section id="horisontalscrollsection" class="relative h-[200vw] md:h-[400vw]">
+        <section
+          id="horisontalscrollsection"
+          class="relative h-[200vw] md:h-[400vw]"
+        >
           <ul
             id="horisontalliste"
-            class="sticky top-40 flex  w-[50vw] md:w-[250vw] list-none gap-[5rem] bg-[#222222] opacity-70"
+            class="sticky top-40 flex w-[50vw] list-none gap-[5rem] bg-[#222222] opacity-70 md:w-[250vw]"
           >
             <li
               class="flex flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
             >
-              <img class="h-[400px] md:h-[500px]" src="img/fotorulle1.svg" alt="foto" />
+              <img
+                class="h-[400px] md:h-[500px]"
+                src="img/fotorulle1.svg"
+                alt="foto"
+              />
             </li>
             <li
               class="flex flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
             >
-              <img class="h-[400px] md:h-[500px]" src="img/fotorulle2.svg" alt="foto" />
+              <img
+                class="h-[400px] md:h-[500px]"
+                src="img/fotorulle2.svg"
+                alt="foto"
+              />
             </li>
             <li
               class="flex flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
             >
-              <img class="h-[400px] md:h-[500px]" src="img/fotorulle3.svg" alt="foto" />
+              <img
+                class="h-[400px] md:h-[500px]"
+                src="img/fotorulle3.svg"
+                alt="foto"
+              />
             </li>
             <li
               class="flex flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
             >
-              <img class="h-[400px] md:h-[500px]" src="img/fotorulle4.svg" alt="foto" />
+              <img
+                class="h-[400px] md:h-[500px]"
+                src="img/fotorulle4.svg"
+                alt="foto"
+              />
             </li>
             <li
               class="flex flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
             >
-              <img class="h-[400px] md:h-[500px]" src="img/fotorulle5.svg" alt="foto" />
+              <img
+                class="h-[400px] md:h-[500px]"
+                src="img/fotorulle5.svg"
+                alt="foto"
+              />
             </li>
             <li
               class="flex flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
             >
-              <img class="h-[400px] md:h-[500px]" src="img/fotorulle6.svg" alt="foto" />
+              <img
+                class="h-[400px] md:h-[500px]"
+                src="img/fotorulle6.svg"
+                alt="foto"
+              />
             </li>
             <li
               class="flex flex-auto flex-shrink-0 flex-grow-0 flex-col items-start justify-center overflow-hidden"
             >
-              <img class="h-[400px] md:h-[500px]" src="img/fotorulle7.svg" alt="foto" />
+              <img
+                class="h-[400px] md:h-[500px]"
+                src="img/fotorulle7.svg"
+                alt="foto"
+              />
             </li>
           </ul>
         </section>
       </div>
 
       <section
-        class="mx-10 section5 staggeranimation flex h-screen flex-col place-content-center place-items-center gap-8"
+        class="section5 staggeranimation mx-10 flex h-screen flex-col place-content-center place-items-center gap-8"
       >
-        <div class=" flex gap-6 text-xl font-light">
+        <div class="flex gap-6 text-xl font-light">
           <svg class="glitch" width="32" height="32" viewBox="0 0 256 256">
             <path
               fill="currentColor"
@@ -160,7 +191,9 @@
               d="M128 40a100 100 0 1 0 100 100A100.2 100.2 0 0 0 128 40Zm0 176a76 76 0 1 1 76-76a76.1 76.1 0 0 1-76 76Zm42.4-118.4a11.9 11.9 0 0 1 0 16.9l-33.9 34a12.1 12.1 0 0 1-17 0a12 12 0 0 1 0-17l34-33.9a11.9 11.9 0 0 1 16.9 0ZM92 12a12 12 0 0 1 12-12h48a12 12 0 0 1 0 24h-48a12 12 0 0 1-12-12Z"
             />
           </svg>
-          <p class="font-display">Det svarer til én fotolicens hvert 16. sekund</p>
+          <p class="font-display">
+            Det svarer til én fotolicens hvert 16. sekund
+          </p>
         </div>
         <div class="flex gap-6 text-xl font-light">
           <svg width="32" height="32" viewBox="0 0 256 256">
@@ -173,27 +206,15 @@
         </div>
       </section>
 
-      <section class="section6 parallaxcontainer">
-        <div
-          class="w-100 sticky top-0 grid h-[100vh] grid-cols-2 overflow-hidden bg-[url('img/sektion_bg.webp')] bg-cover object-cover"
-        >
-          <div
-            class="col-span-2 flex place-items-center gap-3 text-right text-black"
+      <section class="section6 parallax">
+        <div class="w-100 sticky grid h-[300vh] grid-cols-2">
+          <h2
+            class="self-center whitespace-normal text-right font-display text-5xl font-bold"
           >
-            <svg width="45" height="45" viewBox="0 0 256 256">
-              <path
-                fill="currentColor"
-                d="m198.4 129l-52.2-19.2L127 57.6a16 16 0 0 0-30 0l-19.2 52.2L25.6 129a16 16 0 0 0 0 30l52.2 19.2L97 230.4a16 16 0 0 0 30 0l19.2-52.2l52.2-19.2a16 16 0 0 0 0-30Zm-57.7 34.2a15.9 15.9 0 0 0-9.5 9.5L112 224.9l-19.2-52.2a15.9 15.9 0 0 0-9.5-9.5L31.1 144l52.2-19.2a15.9 15.9 0 0 0 9.5-9.5L112 63.1l19.2 52.2a15.9 15.9 0 0 0 9.5 9.5l52.2 19.2ZM144 40a8 8 0 0 1 8-8h16V16a8 8 0 0 1 16 0v16h16a8 8 0 0 1 0 16h-16v16a8 8 0 0 1-16 0V48h-16a8 8 0 0 1-8-8Zm104 48a8 8 0 0 1-8 8h-8v8a8 8 0 0 1-16 0v-8h-8a8 8 0 0 1 0-16h8v-8a8 8 0 0 1 16 0v8h8a8 8 0 0 1 8 8Z"
-              />
-            </svg>
-            <h2
-              class="m-0 whitespace-normal p-0 text-right font-display text-5xl font-bold"
-            >
-              Pierres berømmelse
-            </h2>
-          </div>
+            Pierres berømmelse
+          </h2>
           <div
-            class="parallaxcontainer m-8 mx-auto w-1/2 bg-slate-50 p-10 text-xl text-black opacity-75"
+            class="sticky top-32 col-start-1 m-8 mx-auto h-fit w-1/2 bg-slate-50 p-10 text-xl text-black opacity-75"
           >
             <h4 class="font-display font-bold uppercase">
               Brugte alle sine lommepenge
@@ -248,9 +269,11 @@
             src="tyktaage2.webp"
             alt="skillevej"
           />
-          <h2 class="relative h-96 text-center font-display font-bold">En skillevej</h2>
+          <h2 class="relative h-96 text-center font-display font-bold">
+            En skillevej
+          </h2>
           <div class="mx-10 md:mx-80">
-            <p class="relative h-96 text-center md:text-2xl font-display">
+            <p class="relative h-96 text-center font-display md:text-2xl">
               Pierre tjente godt det følgende årti. Men stille og roligt
               begyndte billederne også at give ham kvalme. Han kunne ikke holde
               sit eget arbejde ud, og måtte finde et modsvar til alle de
@@ -263,14 +286,14 @@
             <h2 class="relative h-96 text-center font-display font-bold">
               En rask beslutning
             </h2>
-            <p class="relative h-96 text-center md:text-2xl font-display">
+            <p class="relative h-96 text-center font-display md:text-2xl">
               Han søgte inspiration i analog fotografering, i Lomo-bevægelsen,
               Glitch art og polaroid fotografering, og begyndte stille og roligt
               at skabe sig en ny stil - en stil med fokus på det uperfekte, og
               hvor der er et uforudsigeligt element i det at tage billeder.
             </p>
 
-            <p class="relative h-96 text-center md:text-2xl font-display">
+            <p class="relative h-96 text-center font-display md:text-2xl">
               Pierre tog det endda så vidt at han ikke kun droppede at tage
               stock-fotos. Han fjernede også alle stock-fotos fra de tjenester,
               han solgte sine fotos hos. Han gik fra at være en god
