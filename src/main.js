@@ -84,3 +84,5 @@ window.addEventListener("scroll", function (e) {
     setTimeout(startAnimation(), 1200);
   }
 });
+
+
