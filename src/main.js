@@ -24,6 +24,30 @@ inView(".staggeranimation", ({ target }) => {
   );
 });
 
+const lillevideo3 = document.querySelector("#videofil3");
+lillevideo3.pause();
+
+scroll(
+  ({ y }) => {
+    if (!lillevideo3.readyState) return;
+    lillevideo3.currentTime = lillevideo3.duration * y.progress;
+  },
+  {
+    target: document.querySelector(".videoarticle3"),
+    offset: ["-100vh", "end end"],
+  }
+);
+
+inView(".staggeranimation", ({ target }) => {
+  animate(
+    ".staggeranimation div",
+    { opacity: [0, 1] },
+    {
+      delay: stagger(1, { start: 1 }),
+    }
+  );
+});
+
 const items = document.querySelectorAll("#horisontalliste li");
 scroll(
   animate("#horisontalliste", {
