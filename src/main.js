@@ -1,19 +1,19 @@
 import "./style.css";
 import { animate, stagger, inView, scroll, timeline } from "motion";
 
-const lillevideo = document.querySelector("#videofil");
-lillevideo.pause();
+// const lillevideo = document.querySelector("#videofil");
+// lillevideo.pause();
 
-scroll(
-  ({ y }) => {
-    if (!lillevideo.readyState) return;
-    lillevideo.currentTime = lillevideo.duration * y.progress;
-  },
-  {
-    target: document.querySelector(".videoarticle"),
-    offset: ["-100vh", "end end"],
-  }
-);
+// scroll(
+//   ({ y }) => {
+//     if (!lillevideo.readyState) return;
+//     lillevideo.currentTime = lillevideo.duration * y.progress;
+//   },
+//   {
+//     target: document.querySelector(".videoarticle"),
+//     offset: ["-100vh", "end end"],
+//   }
+// );
 inView(".staggeranimation", ({ target }) => {
   animate(
     ".staggeranimation div",
@@ -25,13 +25,10 @@ inView(".staggeranimation", ({ target }) => {
 });
 
 inView(".bounce-in-top", ({ target }) => {
-  animate(
-    ".bounce-in-top",
-    {
-      duration: [3]},
-  );
+  animate(".bounce-in-top", {
+    duration: [3],
+  });
 });
-
 
 inView(".staggeranimation", ({ target }) => {
   animate(
@@ -46,7 +43,7 @@ inView(".staggeranimation", ({ target }) => {
 const items = document.querySelectorAll("#horisontalliste li");
 scroll(
   animate("#horisontalliste", {
-    transform: ["none", `translateX(-${(items.length - 1)*500}px)`],
+    transform: ["none", `translateX(-${(items.length - 1) * 500}px)`],
   }),
   { target: document.querySelector("#horisontalscrollsection") }
 );
@@ -103,5 +100,3 @@ window.addEventListener("scroll", function (e) {
     setTimeout(startAnimation(), 1200);
   }
 });
-
-
