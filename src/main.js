@@ -24,6 +24,13 @@ inView(".staggeranimation", ({ target }) => {
   );
 });
 
+inView(".bounce-in-top", ({ target }) => {
+  animate(
+    ".bounce-in-top",
+    {
+      duration: [3]},
+  );
+});
 
 
 inView(".staggeranimation", ({ target }) => {
@@ -39,7 +46,7 @@ inView(".staggeranimation", ({ target }) => {
 const items = document.querySelectorAll("#horisontalliste li");
 scroll(
   animate("#horisontalliste", {
-    transform: ["none", `translateX(-${items.length - 1}00vw)`],
+    transform: ["none", `translateX(-${(items.length - 1)*500}px)`],
   }),
   { target: document.querySelector("#horisontalscrollsection") }
 );
